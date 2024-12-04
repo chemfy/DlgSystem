@@ -6,6 +6,7 @@
 #include "Toolkits/AssetEditorToolkit.h"
 #include "IDetailsView.h"
 #include "Misc/NotifyHook.h"
+#include "Subsystems/AssetEditorSubsystem.h"
 
 #include "DlgSystemEditor/Editor/Graph/DialogueGraph.h"
 #include "DlgSystemEditor/Editor/IDlgEditor.h"

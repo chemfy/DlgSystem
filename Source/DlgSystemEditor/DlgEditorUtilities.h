@@ -3,7 +3,7 @@
 
 #include "ConnectionDrawingPolicy.h"
 #include "EdGraphNode_Comment.h"
-
+#include "Subsystems/AssetEditorSubsystem.h"
 #include "Editor/Graph/DialogueGraph.h"
 #include "DlgSystem/Nodes/DlgNode.h"
 

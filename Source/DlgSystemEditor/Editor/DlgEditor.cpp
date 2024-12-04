@@ -17,6 +17,7 @@
 #include "EdGraphUtilities.h"
 #include "HAL/PlatformApplicationMisc.h"
 #include "Editor/Transactor.h"
+#include "Subsystems/AssetEditorSubsystem.h"
 
 #include "DlgSystemEditor/DlgSystemEditorModule.h"
 #include "DlgSystem/DlgDialogue.h"

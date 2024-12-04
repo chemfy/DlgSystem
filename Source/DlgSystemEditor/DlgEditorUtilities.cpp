@@ -11,7 +11,7 @@
 #include "Kismet2/SClassPickerDialog.h"
 #include "Runtime/Launch/Resources/Version.h"
 #include "Engine/Blueprint.h"
-
+#include "Subsystems/AssetEditorSubsystem.h"
 #include "DlgSystemEditorModule.h"
 #include "Editor/IDlgEditor.h"
 #include "Editor/Nodes/DialogueGraphNode.h"
