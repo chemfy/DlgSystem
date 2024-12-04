@@ -5,6 +5,7 @@
 #include "Layout/Visibility.h"
 #include "DlgDetailsPanelUtils.h"
 #include "DlgSystem/DlgManager.h"
+#include "PropertyHandle.h"
 
 class UDlgDialogue;
 class FDlgMultiLineEditableTextBox_CustomRowHelper;

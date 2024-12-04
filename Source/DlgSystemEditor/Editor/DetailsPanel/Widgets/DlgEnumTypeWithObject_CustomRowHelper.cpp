@@ -1,6 +1,6 @@
 // Copyright Csaba Molnar, Daniel Butum. All Rights Reserved.
 #include "DlgEnumTypeWithObject_CustomRowHelper.h"
-
+#include "PropertyHandle.h"
 #include "DetailWidgetRow.h"
 #include "Internationalization/TextNamespaceUtil.h"
 #include "DlgSystemEditor/Editor/DetailsPanel/Widgets/DlgEditableTextPropertyHandle.h"

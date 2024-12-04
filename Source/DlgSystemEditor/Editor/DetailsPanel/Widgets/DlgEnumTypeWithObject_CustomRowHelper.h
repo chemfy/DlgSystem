@@ -5,7 +5,7 @@
 #include "DlgSystem/DlgCondition.h"
 #include "DlgSystem/DlgEvent.h"
 #include "IDetailPropertyRow.h"
-
+#include "PropertyHandle.h"
 class FDetailWidgetRow;
 class UDlgDialogue;
 class UBlueprint;

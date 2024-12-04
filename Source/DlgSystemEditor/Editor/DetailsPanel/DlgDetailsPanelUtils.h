@@ -3,6 +3,7 @@
 
 #include "CoreMinimal.h"
 #include "PropertyEditorModule.h"
+#include "PropertyHandle.h"
 
 #include "DlgSystemEditor/Editor/Nodes/DialogueGraphNode_Edge.h"
 #include "DlgSystemEditor/Editor/Nodes/DialogueGraphNode.h"

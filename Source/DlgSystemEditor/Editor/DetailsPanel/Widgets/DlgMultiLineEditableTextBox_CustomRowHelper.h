@@ -2,7 +2,7 @@
 #pragma once
 
 #include "DetailWidgetRow.h"
-
+#include "PropertyHandle.h"
 #include "Widgets/Input/SMultiLineEditableTextBox.h"
 #include "DlgBase_CustomRowHelper.h"
 #include "SDlgTextPropertyEditableTextBox.h"

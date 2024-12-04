@@ -2,7 +2,7 @@
 #pragma once
 
 #include "DetailWidgetRow.h"
-
+#include "PropertyHandle.h"
 #include "DlgBase_CustomRowHelper.h"
 
 class SDlgTextPropertyPickList;

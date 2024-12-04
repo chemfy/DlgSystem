@@ -3,6 +3,7 @@
 
 #include "IPropertyTypeCustomization.h"
 #include "IDetailPropertyRow.h"
+#include "PropertyHandle.h"
 
 #include "DlgSystem/DlgManager.h"
 #include "DlgDetailsPanelUtils.h"

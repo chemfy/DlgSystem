@@ -4,6 +4,7 @@
 #include "IPropertyTypeCustomization.h"
 #include "Layout/Visibility.h"
 #include "IDetailPropertyRow.h"
+#include "PropertyHandle.h"
 
 class FDlgTextPropertyPickList_CustomRowHelper;
 

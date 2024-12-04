@@ -2,6 +2,7 @@
 #include "DlgDetailsPanelUtils.h"
 #include "PropertyEditorModule.h"
 #include "DlgSystem/DlgHelper.h"
+#include "PropertyHandle.h"
 
 UDialogueGraphNode_Base* FDlgDetailsPanelUtils::GetGraphNodeBaseFromPropertyHandle(const TSharedRef<IPropertyHandle>& PropertyHandle)
 {

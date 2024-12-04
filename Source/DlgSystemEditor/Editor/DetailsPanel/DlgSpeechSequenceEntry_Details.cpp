@@ -3,6 +3,7 @@
 
 #include "IPropertyUtilities.h"
 #include "IDetailChildrenBuilder.h"
+#include "PropertyHandle.h"
 
 #include "DlgDetailsPanelUtils.h"
 #include "DlgSystemEditor/Editor/Nodes/DialogueGraphNode.h"

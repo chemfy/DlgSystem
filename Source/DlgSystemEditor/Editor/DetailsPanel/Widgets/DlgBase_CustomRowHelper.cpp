@@ -1,6 +1,6 @@
 // Copyright Csaba Molnar, Daniel Butum. All Rights Reserved.
 #include "DlgBase_CustomRowHelper.h"
-
+#include "PropertyHandle.h"
 #include "PropertyHandle.h"
 #include "DetailWidgetRow.h"
 

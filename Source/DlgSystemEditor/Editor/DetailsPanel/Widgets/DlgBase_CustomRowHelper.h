@@ -2,7 +2,7 @@
 #pragma once
 
 #include "DetailWidgetRow.h"
-
+#include "PropertyHandle.h"
 class FDetailWidgetRow;
 
 /**

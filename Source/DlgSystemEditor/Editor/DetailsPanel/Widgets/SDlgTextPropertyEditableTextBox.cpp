@@ -15,7 +15,7 @@
 #include "EditorStyleSet.h"
 #include "Internationalization/StringTableCore.h"
 #include "Internationalization/StringTableRegistry.h"
-
+#include "PropertyHandle.h"
 #include "DlgSystem/DlgLocalizationHelper.h"
 #include "DlgSystem/NYEngineVersionHelpers.h"
 #include "DlgSystemEditor/Editor/DetailsPanel/Widgets/DlgEditableTextPropertyHandle.h"

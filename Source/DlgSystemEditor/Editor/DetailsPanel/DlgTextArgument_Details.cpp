@@ -6,6 +6,7 @@
 #include "IDetailChildrenBuilder.h"
 #include "UObject/TextProperty.h"
 #include "PropertyEditorModule.h"
+#include "PropertyHandle.h"
 
 #include "DlgSystem/NYReflectionHelper.h"
 #include "DlgDetailsPanelUtils.h"

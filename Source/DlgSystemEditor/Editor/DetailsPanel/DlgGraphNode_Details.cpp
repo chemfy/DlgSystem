@@ -3,6 +3,7 @@
 
 #include "DetailCategoryBuilder.h"
 #include "DetailLayoutBuilder.h"
+#include "PropertyHandle.h"
 
 #include "DlgSystem/Nodes/DlgNode.h"
 #include "DlgSystem/Nodes/DlgNode_SpeechSequence.h"

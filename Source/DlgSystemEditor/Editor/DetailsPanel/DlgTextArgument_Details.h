@@ -3,6 +3,7 @@
 
 #include "IPropertyTypeCustomization.h"
 #include "Layout/Visibility.h"
+#include "PropertyHandle.h"
 
 #include "DlgSystem/DlgTextArgument.h"
 #include "DlgDetailsPanelUtils.h"

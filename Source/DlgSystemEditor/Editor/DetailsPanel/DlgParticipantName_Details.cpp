@@ -3,6 +3,7 @@
 
 #include "IDetailPropertyRow.h"
 #include "IDetailChildrenBuilder.h"
+#include "PropertyHandle.h"
 
 #include "DlgSystemEditor/Editor/DetailsPanel/Widgets/SDlgTextPropertyPickList.h"
 #include "DlgSystemEditor/Editor/DetailsPanel/Widgets/DlgTextPropertyPickList_CustomRowHelper.h"

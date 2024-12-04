@@ -4,6 +4,7 @@
 #include "IDetailPropertyRow.h"
 #include "IDetailChildrenBuilder.h"
 #include "IPropertyTypeCustomization.h"
+#include "PropertyHandle.h"
 
 #include "DlgSystem/Nodes/DlgNode.h"
 #include "DlgDetailsPanelUtils.h"

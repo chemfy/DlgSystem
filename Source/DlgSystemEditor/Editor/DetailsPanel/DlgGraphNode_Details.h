@@ -3,6 +3,7 @@
 
 #include "IDetailCustomization.h"
 #include "IDetailPropertyRow.h"
+#include "PropertyHandle.h"
 
 #include "DlgSystem/DlgManager.h"
 #include "DlgSystemEditor/Editor/Nodes/DialogueGraphNode.h"
