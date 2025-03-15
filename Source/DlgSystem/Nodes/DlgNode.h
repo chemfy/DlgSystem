@@ -179,6 +179,9 @@ public:
 	virtual int32 GetNumNodeChildren() const { return Children.Num(); }
 
 	UFUNCTION(BlueprintPure, Category = "Dialogue|Node")
+	virtual bool IsEndNode() const { return GetNumNodeChildren() == 0; }
+
+	UFUNCTION(BlueprintPure, Category = "Dialogue|Node")
 	virtual const FDlgEdge& GetNodeChildAt(int32 EdgeIndex) const { return Children[EdgeIndex]; }
 
 	// Adds an Edge to the end of the Children Array.
