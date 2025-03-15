@@ -6,6 +6,7 @@
 #include "Sound/SoundWave.h"
 
 #include "DlgSystem/DlgContext.h"
+#include "DlgSystem/DlgDialogueParticipant.h"
 #include "DlgSystem/Logging/DlgLogger.h"
 #include "DlgSystem/DlgLocalizationHelper.h"
 
@@ -145,6 +146,18 @@ bool UDlgNode::HandleNodeEnter(UDlgContext& Context, TSet<const UDlgNode*> Nodes
 
 void UDlgNode::FireNodeEnterEvents(UDlgContext& Context)
 {
+	for (const TPair<FName, UObject*>& Pair : Context.GetParticipants())
+	{
+		if (UObject* Participant = Pair.Value)
+		{
+			if (Participant->GetClass()->ImplementsInterface(UDlgDialogueParticipant::StaticClass()))
+			{
+				// Pass the node's speaker name (OwnerName) so everyone knows who's talking
+				IDlgDialogueParticipant::Execute_OnNodeEnter(Participant, &Context, OwnerName);
+			}
+		}
+	}
+
 	for (const FDlgEvent& Event : EnterEvents)
 	{
 		// Get Participant from either event or parent

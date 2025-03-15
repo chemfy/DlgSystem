@@ -101,4 +101,7 @@ class DLGSYSTEM_API IDlgDialogueParticipant
 	// @return value: irrelevant
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Dialogue|Participant|Event")
 	bool ModifyNameValue(FName ValueName, FName NameValue);
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Dialogue|Participant|Event")
+	void OnNodeEnter(UDlgContext* Context, FName NodeSpeaker);
 };
