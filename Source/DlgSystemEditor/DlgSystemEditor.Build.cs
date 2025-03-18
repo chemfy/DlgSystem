@@ -70,6 +70,8 @@ public class DlgSystemEditor : ModuleRules
 
 				// e.g. FPlatformApplicationMisc::ClipboardCopy
 				"ApplicationCore",
+
+				"LevelSequence",
 			});
 
 #if UE_4_24_OR_LATER

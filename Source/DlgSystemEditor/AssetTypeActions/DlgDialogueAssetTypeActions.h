@@ -11,7 +11,7 @@ class IToolkitHost;
  * Defines the look and actions the editor takes when clicking/viewing a Dialogue asset.
  * See FDlgSystemEditorModule::StartupModule for usage.
  */
-class FDlgDialogueAssetTypeActions : public FAssetTypeActions_Base
+class DLGSYSTEMEDITOR_API FDlgDialogueAssetTypeActions : public FAssetTypeActions_Base
 {
 public:
 	FDlgDialogueAssetTypeActions(EAssetTypeCategories::Type InAssetCategory) : AssetCategory(InAssetCategory) {}
