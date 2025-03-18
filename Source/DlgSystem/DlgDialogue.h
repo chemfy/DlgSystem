@@ -9,6 +9,7 @@
 #include "IDlgEditorAccess.h"
 #include "DlgSystemSettings.h"
 #include "DlgDialogueParticipantData.h"
+#include "LevelSequence.h"
 
 #if NY_ENGINE_VERSION >= 500
 #include "UObject/ObjectSaveContext.h"
@@ -626,6 +627,18 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Dialogue|Data", DisplayName = "Get Node From GUID")
 	UDlgNode* GetMutableNodeFromGUID(const FGuid& NodeGUID) const { return GetMutableNodeFromIndex(GetNodeIndexForGUID(NodeGUID));   }
 
+	// Setter and getter for Level Sequence
+	UFUNCTION(BlueprintPure, Category = "Dialogue|Level Sequence")
+	ULevelSequence* GetLevelSequence() const { return LevelSequence; }
+	UFUNCTION(BlueprintCallable, Category = "Dialogue|Level Sequence")
+	void SetLevelSequence(ULevelSequence* InLevelSequence)
+	{
+		if (InLevelSequence != LevelSequence)
+		{
+			LevelSequence = InLevelSequence;
+		}
+	}
+
 	// Sets the new Start Node. Use with care.
 	void SetStartNodes(TArray<UDlgNode*> InStartNodes);
 
@@ -759,6 +772,10 @@ protected:
 	// Maps Node GUID => Node Index
 	UPROPERTY(VisibleAnywhere, AdvancedDisplay, Category = "Dialogue", DisplayName = "Nodes GUID To Index Map")
 	TMap<FGuid, int32> NodesGUIDToIndexMap;
+
+	// Links to a Level Sequence that is used with this Dialogue
+	UPROPERTY(EditAnywhere, Category = "Dialogue")
+	TObjectPtr<ULevelSequence> LevelSequence;
 
 	// Useful for syncing on the first run with the text file.
 	bool bIsSyncedWithTextFile = false;
